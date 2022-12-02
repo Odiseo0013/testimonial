@@ -1,0 +1,13 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EAE9E9;
+}
+
+.MuiCardHeader-title {
+  font-size: 1rem !important;
+}
+
+.MuiCardHeader-avatar {
+  margin-right: 8px !important;
+}
