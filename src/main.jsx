@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Testimonial } from './Testimonial'
+import { TestimonyApp } from './TestimonyApp'
+import { TestimonyProvider } from './context'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Testimonial />
+    <TestimonyProvider>
+      <TestimonyApp />
+    </TestimonyProvider>
   </React.StrictMode>
 )
