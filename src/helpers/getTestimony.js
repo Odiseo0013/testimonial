@@ -1,14 +1,14 @@
 import axios from "axios";
 
 export const getTestimony = async () => {
-
   try {
-
-    const {data} = await axios.get('https://testimonialapi.toolcarton.com/api');
+    const { data } = await axios.get(
+      "https://testimonialapi.toolcarton.com/api"
+    );
     // Order by [ Rating Desc ]
-    const respOrdered = data.sort((a,b) => b.rating - a.rating);
+    const respOrdered = data.sort((a, b) => b.rating - a.rating);
 
-    const testimonials = respOrdered.map( item => {
+    const testimonials = respOrdered.map((item) => {
       return {
         avatar: item.avatar,
         id: item.id,
@@ -16,12 +16,11 @@ export const getTestimony = async () => {
         message: item.message,
         name: item.name,
         rating: item.rating,
-      }
-    })
+      };
+    });
 
-    return testimonials
-  } 
-  catch (error) {
+    return testimonials;
+  } catch (error) {
     return null;
   }
-}
+};

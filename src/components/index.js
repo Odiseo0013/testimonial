@@ -1,2 +1,2 @@
-export * from './TestimonyGrid';
-export * from './TestimonyItem';
+export * from "./TestimonyGrid";
+export * from "./TestimonyItem";
